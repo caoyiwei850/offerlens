@@ -5,6 +5,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue)](https://www.typescriptlang.org/)
 [![DeepSeek](https://img.shields.io/badge/AI-DeepSeek%20V4%20Flash-orange)](https://deepseek.com/)
 
+> 🚀 **在线体验** → [dp.offerlens.cn:5173](https://dp.offerlens.cn:5173/) （无需注册，免费使用）
+
 **OfferLens** 是一个面向全部职业的中文招聘流程模拟器。用户输入简历与岗位描述，系统通过 AI 模拟真实招聘筛选流程，提供卡点诊断、五维证据评估和证据化简历工作台。
 
 覆盖技术、商业、职能专业、创意传媒、教育科研、医疗照护、工程制造、建筑物流、生活服务和公共服务等职业。
