@@ -1,0 +1,14 @@
+node_modules/
+.next/
+data/
+output/
+backups/
+.env.production
+.env.local
+*.tar.gz
+logs/
+uploads/
+__pycache__/
+.npm/
+.DS_Store
+*.tsbuildinfo

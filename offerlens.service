@@ -1,0 +1,28 @@
+[Unit]
+Description=OfferLens V2
+After=network-online.target redis-server.service
+Wants=network-online.target
+Requires=redis-server.service
+
+[Service]
+Type=simple
+User=offerlens
+Group=offerlens
+WorkingDirectory=/opt/offerlens
+EnvironmentFile=/opt/offerlens/.env.production
+Environment=NODE_ENV=production
+Environment=NEXT_TELEMETRY_DISABLED=1
+Environment=HOSTNAME=127.0.0.1
+Environment=PORT=3000
+ExecStart=/usr/local/bin/node .next/standalone/server.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/offerlens/.next /var/lib/offerlens
+MemoryMax=1G
+
+[Install]
+WantedBy=multi-user.target
